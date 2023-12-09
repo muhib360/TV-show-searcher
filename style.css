@@ -1,0 +1,178 @@
+body {
+    color: white;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+#main-heading {
+    text-transform: uppercase;
+}
+
+#slogan {
+    font-size: 1.4rem;
+    letter-spacing: 3px;
+}
+
+.header {
+    margin-left: 10rem;
+    margin-bottom: 5rem;
+    width: 75%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.img-container {
+    display: inline-block;
+    width: 25rem;
+    height: 35rem;
+    position: relative;
+}
+
+.img-caption {
+    white-space: normal;
+    width: 100%;
+    font-size: 1.5rem;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0;
+    transition: all .2s;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+    transition: all .2s;
+}
+
+.img-container:hover img {
+    filter: brightness(0.5) blur(2px);
+    transform: scale(1);
+}
+
+.img-container:hover .img-caption {
+    opacity: 1;
+}
+
+ul {
+    list-style: none;
+    text-transform: uppercase;
+}
+
+span {
+    font-weight: 800;
+    width: 100%;
+}
+
+li {
+    display: inline-block;
+    width: 100%;
+}
+
+aside {
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+
+@media only screen and (max-width: 830px) {
+    .header {
+        margin-left: 0rem;
+        margin-bottom: 5rem;
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #slogan {
+        font-size: 2.02rem;
+        letter-spacing: 1px;
+    }
+
+    #main-heading {
+        font-size: 3rem;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .header {
+        margin: 0 auto;
+        margin-bottom: 5rem;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    #slogan {
+        font-size: 1.95rem;
+        letter-spacing: 4px;
+    }
+
+    #main-heading {
+        letter-spacing: 5px;
+    }
+
+    .heading-container {
+        margin-bottom: 1rem;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    #slogan {
+        font-size: 1.21rem;
+        letter-spacing: 2px;
+    }
+
+    header {
+        margin-bottom: 1rem;
+    }
+
+    #main-heading {
+        font-size: 1.6rem;
+        letter-spacing: 5px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+
+    #slogan {
+        font-size: 1.3rem;
+        letter-spacing: 1px;
+    }
+
+    #main-heading {
+        font-size: 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    #slogan {
+        font-size: .95rem;
+        letter-spacing: 3px;
+    }
+
+    #main-heading {
+        font-size: 1.4rem;
+    }
+}
+
+@media only screen and (max-width: 365px) {
+    #slogan {
+        font-size: 1.04rem;
+        letter-spacing: 2px;
+    }
+
+    #main-heading {
+        font-size: 1.34rem;
+    }
+
+    input {
+        width: 70%;
+    }
+}
